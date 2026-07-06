@@ -1,0 +1,15 @@
+${AnsiColor.BRIGHT_GREEN}
+ _____            _               ________  ___
+/  ___|          (_)             |_   _|  \/  |
+\ `--. _ __  _ __ _ _ __   __ _    | | | .  . |
+ `--. \ '_ \| '__| | '_ \ / _` |   | | | |\/| |
+/\__/ / |_) | |  | | | | | (_| |  _| |_| |  | |
+\____/| .__/|_|  |_|_| |_|\__, |  \___/\_|  |_/
+      | |                  __/ |
+      |_|                 |___/
+
+${AnsiColor.BRIGHT_RED}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
+Spring Amoeba Version: ${amoeba.spring-boot.verison}${amoeba.spring-boot.formatted-version}
+Spring Game Version: ${doode.spring-game.version}${doodle.spring-game.formatted-version}
+${AnsiColor.DEFAULT}
