@@ -1,0 +1,36 @@
+name: CI Maven
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+          cache: 'maven'
+
+      - name: Checkout deepinthink/amoeba
+        uses: actions/checkout@v4
+        with:
+          repository: deepinthink/amoeba
+          path: deepinthink/amoeba
+
+      - name: Build && Install amoeba-maven
+        run: cd deepinthink/amoeba/tools/buildtools/java/amoeba-maven && ./mvnw install -B
+
+      - name: Build && Install amoeba-external
+        run: cd deepinthink/amoeba/infrastructure/external/java/amoeba-external && ./mvnw install -B
+
+      - name: Build && Install amoeba-spring-boot
+        run: cd deepinthink/amoeba/infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
+
+      - name: Build && Install blink-spring-im
+        run: cd infrastructure/framework/java/blink-spring-im && ./mvnw install -B
