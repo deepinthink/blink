@@ -35,6 +35,9 @@ jobs:
       - name: Build && Install blink-spring-im
         run: cd infrastructure/framework/java/blink-spring-im && ./mvnw install -B
 
+      - name: Build && Install blink-specification-component
+        run: cd specification/component/java/blink-specification-component && ./mvnw install -B
+
       - name: Build && Install blink-specification-im
         run: cd specification/im/java/blink-specification-im && ./mvnw install -B
 
