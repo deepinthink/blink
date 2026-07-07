@@ -3,16 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.amoeba</groupId>
-    <artifactId>maven-springboot-parent</artifactId>
+    <artifactId>maven-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
     <relativePath/>
   </parent>
   <groupId>org.deepinthink.blink</groupId>
-  <artifactId>spring-im-component-parent</artifactId>
+  <artifactId>specification-component-parent</artifactId>
   <packaging>pom</packaging>
   <properties>
     <amoeba.version>2026.5.0-SNAPSHOT</amoeba.version>
-    <blink.version>${project.version}</blink.version>
     <spotless.license-header.file>${project.basedir}/../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
   <dependencyManagement>
@@ -25,23 +24,9 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>org.deepinthink.amoeba</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${amoeba.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
         <groupId>org.deepinthink.blink</groupId>
-        <artifactId>spring-im-dependencies</artifactId>
-        <version>${blink.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.deepinthink.blink</groupId>
-        <artifactId>spring-im-component-dependencies</artifactId>
-        <version>${blink.version}</version>
+        <artifactId>specification-component-dependencies</artifactId>
+        <version>${project.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
