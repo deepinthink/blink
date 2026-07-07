@@ -35,5 +35,8 @@ jobs:
       - name: Build && Install blink-spring-im
         run: cd infrastructure/framework/java/blink-spring-im && ./mvnw install -B
 
+      - name: Build && Install blink-spring-im-component
+        run: cd infrastructure/component/java/blink-spring-im-component && ./mvnw install -B
+
       - name: Build && Install blink-spring-im-chat
         run: cd templates/chat/java/blink-spring-im-chat && ./mvnw install -B
