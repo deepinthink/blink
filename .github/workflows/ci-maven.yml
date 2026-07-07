@@ -46,3 +46,6 @@ jobs:
 
       - name: Build && Install blink-spring-im-chat
         run: cd templates/chat/java/blink-spring-im-chat && ./mvnw install -B
+
+      - name: Build && Install blink-spring-im-talk
+        run: cd templates/talk/java/blink-spring-im-talk && ./mvnw install -B
