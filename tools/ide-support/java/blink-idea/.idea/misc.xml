@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/../../../../infrastructure/component/java/blink-spring-im-component/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../templates/chat/java/blink-spring-im-chat/pom.xml" />
         <option value="$PROJECT_DIR$/../../../../templates/talk/java/blink-spring-im-talk/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../templates/benchmark/java/blink-benchmark/pom.xml" />
       </list>
     </option>
   </component>
