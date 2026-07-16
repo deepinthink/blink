@@ -51,4 +51,4 @@ jobs:
         run: cd templates/talk/java/blink-spring-im-talk && ./mvnw install -B
 
       - name: Build && Install blink-initializr
-        run: cd templates/initializr/java/blink-initializr && ./mvnw install -B
+        run: cd tools/initializr/java/blink-initializr && ./mvnw install -B
