@@ -1,0 +1,38 @@
+name: Setup Blink
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout deepinthink/blink
+      uses: actions/checkout@v4
+      with:
+        repository: deepinthink/blink
+        path: deepinthink/blink
+
+    - name: Build && Install blink-spring-im
+      shell: bash
+      run: cd deepinthink/blink/infrastructure/framework/java/blink-spring-im && ./mvnw install -B
+
+    - name: Build && Install blink-specification-component
+      shell: bash
+      run: cd deepinthink/blink/specification/component/java/blink-specification-component && ./mvnw install -B
+
+    - name: Build && Install blink-specification-im
+      shell: bash
+      run: cd deepinthink/blink/specification/im/java/blink-specification-im && ./mvnw install -B
+
+    - name: Build && Install blink-spring-im-component
+      shell: bash
+      run: cd deepinthink/blink/infrastructure/component/java/blink-spring-im-component && ./mvnw install -B
+
+    - name: Build && Install blink-spring-im-chat
+      shell: bash
+      run: cd deepinthink/blink/templates/chat/java/blink-spring-im-chat && ./mvnw install -B
+
+    - name: Build && Install blink-spring-im-talk
+      shell: bash
+      run: cd deepinthink/blink/templates/talk/java/blink-spring-im-talk && ./mvnw install -B
+
+    - name: Build && Install blink-initializr
+      shell: bash
+      run: cd deepinthink/blink/tools/initializr/java/blink-initializr && ./mvnw install -B

@@ -17,38 +17,8 @@ jobs:
           java-version: '25'
           cache: 'maven'
 
-      - name: Checkout deepinthink/amoeba
-        uses: actions/checkout@v4
-        with:
-          repository: deepinthink/amoeba
-          path: deepinthink/amoeba
+      - name: Setup deepinthink/amoeba
+        uses: deepinthink/amoeba/.github/actions/setup-amoeba/java@main
 
-      - name: Build && Install amoeba-maven
-        run: cd deepinthink/amoeba/tools/buildtools/java/amoeba-maven && ./mvnw install -B
-
-      - name: Build && Install amoeba-external
-        run: cd deepinthink/amoeba/infrastructure/external/java/amoeba-external && ./mvnw install -B
-
-      - name: Build && Install amoeba-spring-boot
-        run: cd deepinthink/amoeba/infrastructure/framework/java/amoeba-spring-boot && ./mvnw install -B
-
-      - name: Build && Install blink-spring-im
-        run: cd infrastructure/framework/java/blink-spring-im && ./mvnw install -B
-
-      - name: Build && Install blink-specification-component
-        run: cd specification/component/java/blink-specification-component && ./mvnw install -B
-
-      - name: Build && Install blink-specification-im
-        run: cd specification/im/java/blink-specification-im && ./mvnw install -B
-
-      - name: Build && Install blink-spring-im-component
-        run: cd infrastructure/component/java/blink-spring-im-component && ./mvnw install -B
-
-      - name: Build && Install blink-spring-im-chat
-        run: cd templates/chat/java/blink-spring-im-chat && ./mvnw install -B
-
-      - name: Build && Install blink-spring-im-talk
-        run: cd templates/talk/java/blink-spring-im-talk && ./mvnw install -B
-
-      - name: Build && Install blink-initializr
-        run: cd tools/initializr/java/blink-initializr && ./mvnw install -B
+      - name: Setup deepinthink/blink
+        uses: ./.github/actions/setup-blink/java
