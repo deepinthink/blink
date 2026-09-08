@@ -36,7 +36,7 @@ jobs:
         run: cd templates/benchmark/java/blink-benchmark && ./mvnw install
 
       - name: Build && Install blink-chat
-        run: cd templates/chat/java/blink-chat && ./mvnw install
+        run: cd templates/chat/java/blink-spring-im-chat && ./mvnw install
 
       - name: Build && Install blink-talk
-        run: cd templates/talk/java/blink-talk && ./mvnw install
+        run: cd templates/talk/java/blink-spring-im-talk && ./mvnw install
