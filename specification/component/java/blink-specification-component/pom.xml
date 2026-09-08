@@ -11,6 +11,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>specification-component-dependencies</module>
+    <module>specification-component-gateway</module>
     <module>specification-component-parent</module>
   </modules>
   <properties>

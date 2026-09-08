@@ -11,5 +11,11 @@
         <module name="spring-im-starter" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blink-spring-im-component" target="25" />
+      <module name="spring-im-component-dependencies" target="25" />
+      <module name="spring-im-component-parent" target="25" />
+      <module name="spring-im-component-starters" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>
