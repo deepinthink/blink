@@ -13,7 +13,6 @@
   <properties>
     <amoeba.version>2026.5.0-SNAPSHOT</amoeba.version>
     <blink.version>${project.version}</blink.version>
-    <spring-im.version>2026.5.0-SNAPSHOT</spring-im.version>
     <spotless.license-header.file>${project.basedir}/../../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
   </properties>
   <dependencyManagement>
@@ -35,20 +34,6 @@
       <dependency>
         <groupId>org.deepinthink.blink</groupId>
         <artifactId>spring-im-dependencies</artifactId>
-        <version>${blink.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.deepinthink.blink</groupId>
-        <artifactId>specification-component-dependencies</artifactId>
-        <version>${blink.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.deepinthink.blink</groupId>
-        <artifactId>spring-im-component-dependencies</artifactId>
         <version>${blink.version}</version>
         <type>pom</type>
         <scope>import</scope>
