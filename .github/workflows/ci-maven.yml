@@ -32,6 +32,9 @@ jobs:
       - name: Build && Install blink-spring-im-gateway
         run: cd components/gateway/java/blink-spring-im-gateway && ./mvnw install -B
 
+      - name: Build && Install blink-spring-im-push
+        run: cd components/push/java/blink-spring-im-push && ./mvnw install -B
+
       - name: Build && Install blink-benchmark
         run: cd templates/benchmark/java/blink-benchmark && ./mvnw install
 
