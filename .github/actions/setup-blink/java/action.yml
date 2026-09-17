@@ -13,6 +13,10 @@ runs:
       shell: bash
       run: cd deepinthink/blink/infrastructure/framework/java/blink-spring-im && ./mvnw install -B
 
+    - name: Build && Install blink-spring-im-benchmark
+      shell: bash
+      run: cd deepinthink/blink/infrastructure/benchmark/java/blink-spring-im-benchmark && ./mvnw install -B
+
     - name: Build && Install blink-specification-component
       shell: bash
       run: cd deepinthink/blink/specification/component/java/blink-specification-component && ./mvnw install -B
