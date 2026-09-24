@@ -3,16 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.deepinthink.blink</groupId>
-    <artifactId>spring-im-gateway-parent</artifactId>
+    <artifactId>spring-im-component-gateway-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>spring-im-gateway-parent/pom.xml</relativePath>
+    <relativePath>spring-im-component-gateway-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>blink-spring-im-gateway</artifactId>
+  <artifactId>blink-spring-im-component-gateway</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-im-gateway-dependencies</module>
-    <module>spring-im-gateway-parent</module>
-    <module>spring-im-gateway-starters</module>
+    <module>spring-im-component-gateway-dependencies</module>
+    <module>spring-im-component-gateway-modules</module>
+    <module>spring-im-component-gateway-parent</module>
+    <module>spring-im-component-gateway-starters</module>
   </modules>
   <properties>
     <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>

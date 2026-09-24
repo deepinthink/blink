@@ -25,9 +25,9 @@ runs:
       shell: bash
       run: cd deepinthink/blink/specification/im/java/blink-specification-im && ./mvnw install -B
 
-    - name: Build && Install blink-spring-im-gateway
+    - name: Build && Install blink-spring-im-component-gateway
       shell: bash
-      run: cd deepinthink/blink/components/gateway/java/blink-spring-im-gateway && ./mvnw install -B
+      run: cd deepinthink/blink/components/gateway/java/blink-spring-im-component-gateway && ./mvnw install -B
 
     - name: Build && Install blink-spring-im-push
       shell: bash
