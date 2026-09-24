@@ -6,16 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-im-component-gateway-client" />
         <module name="spring-im" />
+        <module name="spring-im-starter-component-gateway-admin-server" />
+        <module name="spring-im-starter-component-gateway-admin-vaadin" />
+        <module name="spring-im-starter-component-gateway-server" />
+        <module name="spring-im-component-gateway-server" />
         <module name="spring-im-autoconfigure" />
+        <module name="spring-im-component-gateway-admin-server" />
+        <module name="spring-im-starter-component-gateway-client" />
         <module name="spring-im-starter" />
+        <module name="spring-im-component-gateway-admin-vaadin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="blink-spring-im-component" target="25" />
+      <module name="blink-spring-im-gateway" target="25" />
       <module name="spring-im-component-dependencies" target="25" />
       <module name="spring-im-component-parent" target="25" />
       <module name="spring-im-component-starters" target="25" />
+      <module name="spring-im-gateway-dependencies" target="25" />
+      <module name="spring-im-gateway-parent" target="25" />
+      <module name="spring-im-gateway-starters" target="25" />
+      <module name="spring-im-starter-component-gateway-admin-vaadin (1)" target="25" />
+      <module name="spring-im-starter-component-gateway-admin-vaadin (2)" target="25" />
+      <module name="spring-im-starter-component-gateway-admin-vaadin (3)" target="25" />
     </bytecodeTargetLevel>
   </component>
 </project>
