@@ -5,17 +5,14 @@
     <groupId>org.deepinthink.blink</groupId>
     <artifactId>spring-im-push-parent</artifactId>
     <version>2026.5.0-SNAPSHOT</version>
-    <relativePath>spring-im-push-parent/pom.xml</relativePath>
+    <relativePath>../spring-im-push-parent/pom.xml</relativePath>
   </parent>
-  <artifactId>blink-spring-im-push</artifactId>
+  <artifactId>spring-im-push-modules</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>spring-im-push-dependencies</module>
-    <module>spring-im-push-modules</module>
-    <module>spring-im-push-parent</module>
-    <module>spring-im-push-starters</module>
+    <module>spring-im-push-admin-server</module>
+    <module>spring-im-push-admin-vaadin</module>
+    <module>spring-im-push-client</module>
+    <module>spring-im-push-server</module>
   </modules>
-  <properties>
-    <spotless.license-header.file>${project.basedir}/../../../../tools/configs/checkstyle/license-header.txt</spotless.license-header.file>
-  </properties>
 </project>

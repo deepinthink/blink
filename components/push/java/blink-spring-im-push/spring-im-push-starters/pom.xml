@@ -9,4 +9,10 @@
   </parent>
   <artifactId>spring-im-push-starters</artifactId>
   <packaging>pom</packaging>
+  <modules>
+    <module>spring-im-starter-push-admin-server</module>
+    <module>spring-im-starter-push-admin-vaadin</module>
+    <module>spring-im-starter-push-client</module>
+    <module>spring-im-starter-push-server</module>
+  </modules>
 </project>

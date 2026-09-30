@@ -10,4 +10,43 @@
   <groupId>org.deepinthink.blink</groupId>
   <artifactId>spring-im-push-dependencies</artifactId>
   <packaging>pom</packaging>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-push-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-push-admin-vaadin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-push-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-push-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-starter-push-admin-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-starter-push-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.deepinthink.blink</groupId>
+        <artifactId>spring-im-starter-push-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
