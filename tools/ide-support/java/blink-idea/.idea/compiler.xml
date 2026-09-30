@@ -6,17 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-im-push-admin-vaadin" />
         <module name="spring-im-component-gateway-client" />
-        <module name="spring-im" />
-        <module name="spring-im-starter-component-gateway-admin-server" />
+        <module name="spring-im-push-client" />
+        <module name="spring-im-starter-push-client" />
         <module name="spring-im-starter-component-gateway-admin-vaadin" />
         <module name="spring-im-starter-component-gateway-server" />
-        <module name="spring-im-component-gateway-server" />
+        <module name="spring-im-push-server" />
         <module name="spring-im-autoconfigure" />
-        <module name="spring-im-component-gateway-admin-server" />
-        <module name="spring-im-starter-component-gateway-client" />
+        <module name="spring-im-starter-push-server" />
         <module name="spring-im-starter" />
         <module name="spring-im-component-gateway-admin-vaadin" />
+        <module name="spring-im-starter-push-admin-vaadin" />
+        <module name="spring-im" />
+        <module name="spring-im-starter-component-gateway-admin-server" />
+        <module name="spring-im-push-admin-server" />
+        <module name="spring-im-component-gateway-server" />
+        <module name="spring-im-component-gateway-admin-server" />
+        <module name="spring-im-starter-push-admin-server" />
+        <module name="spring-im-starter-component-gateway-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
